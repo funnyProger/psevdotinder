@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<RootNamespace>psevdotinder_api</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<ProjectReference Include="..\psevdotinder_application\psevdotinder_application.csproj" />
+	<ProjectReference Include="..\psevdotinder_core\psevdotinder_core.csproj" />
+	<ProjectReference Include="..\psevdotinder_infrastructure\psevdotinder_infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
